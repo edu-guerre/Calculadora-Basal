@@ -14,26 +14,52 @@
     <h1 id="titulo">Detalle de Producto</h1>
     <div id="contenedor">
         <div id="calculadora">
+            <button id="ayuda">?</button>
+            <div class="pe" id="pe">
+                <div id="resulto">
+                    <p class="item resultado" id="flu">71cc/h</p>
+                    <p class="item resultado" id="man">m+m/2 : 105cc/h</p>
+                    <P class="item resultado" id="sc1">Resultado 1</P>
+                    <P class="item resultado" id="sc2">Resultado 2</P>
+                    <button id="volver1">Volver</button>
+                </div>
+            </div>
             <div class="contenido">
                 <h1>Hidratacion basal</h1>
                 <p class="item"> Completa todos los datos</p>
                 <input type="number" id="peso" placeholder="Peso en kg" />
                 <p class="item" id="error">*Debe completar todos los datos</p>
+                <div id="fila-1">
+                    <button class="botones" id="N1" onclick="writenum(1)">1</button>
+                    <button class="botones" id="N2" onclick="writenum(2)">2</button>
+                    <button class="botones" id="N3" onclick="writenum(3)">3</button>
+                </div>
+                <div id="fila-2">
+                    <button class="botones" id="N4" onclick="writenum(4)">4</button>
+                    <button class="botones" id="N5" onclick="writenum(5)">5</button>
+                    <button class="botones" id="N6" onclick="writenum(6)">6</button>
+                </div>
+                <div id="fila-3">
+                    <button class="botones" id="N7" onclick="writenum(7)">7</button>
+                    <button class="botones" id="N8" onclick="writenum(8)">8</button>
+                    <button class="botones" id="N9" onclick="writenum(9)">9</button>
+                </div>
+                <div id="fila-4">
+                    <button class="boton" id="N0" onclick="writenum(0)">0</button>
+                    <button class="boton" id="BO" onclick="erase()">Eliminar</button>
+                </div>
                 <button class="item" id="calcular">Calcular</button>
-                <p class="item resultado" id="flu">71cc/h</p>
-                <p class="item resultado" id="man">m+m/2 : 105cc/h</p>
-                <P class="item resultado" id="sc1">Resultado 1</P>
-                <P class="item resultado" id="sc2">Resultado 2</P> 
             </div>
         </div>
-        <div id="detalle">
-            <div class="contenido">
+        <div class="contenido1" id="detalle">
+            <div id="txtayuda">
                 <h1>¿Como se calcula?</h1>
                 <ul>
                     <li>De 0kg a 10kg, se calcula 100cc por cada kilo.</li>
                     <li>Se suman 50cc por cada kilo de peso por arriba de 10kg, hasta 20kg.</li>
                     <li>De 20kg para arriba, se suman 20cc por cada kilo adicional</li>
                 </ul>
+                <button id="volver2">Volver</button>
             </div>
         </div>
     </div>
