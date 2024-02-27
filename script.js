@@ -10,6 +10,12 @@ const AYUDA = document.getElementById('ayuda')
 const DETALLE = document.getElementById('detalle')
 const VOLVER1 = document.getElementById('volver1')
 const VOLVER2 = document.getElementById('volver2')
+const ENUNCIADO1 = document.getElementById('enunciado1')
+const ENUNCIADO2 = document.getElementById('enunciado2')
+const ENUNCIADO3 = document.getElementById('enunciado3')
+const ENUNCIADO4 = document.getElementById('enunciado4')
+const TITULO1 = document.getElementById('titulo1')
+const TITULO2 = document.getElementById('titulo2')
 CALCULAR.addEventListener('click', () => {
     const DATO = document.getElementById('peso').value
     //validamos que se cargue un dato
@@ -17,12 +23,14 @@ CALCULAR.addEventListener('click', () => {
         ERROR.style.display = 'none'
         let flujo = Holliday(DATO);
         let mantenimiento = Math.round(flujo*1.5);
-        FLU.innerHTML = flujo + ' cc/hr';
-        MAN.innerHTML = 'm+m/2 ' + mantenimiento + ' cc/hr';
+        FLU.innerHTML = flujo + " CC";
+        MAN.innerHTML =mantenimiento + " CC";
         PE.style.display = 'block';
         FLU.style.display = 'block';
         MAN.style.display = 'block';
-        
+        ENUNCIADO1.style.display = 'block';
+        ENUNCIADO2.style.display = 'block';
+        TITULO1.style.display = 'block';
     } else {
         ERROR.style.display = 'block';
         FLU.style.display = 'none';
@@ -33,11 +41,14 @@ CALCULAR.addEventListener('click', () => {
         let flujo2 = SuperCorp(DATO);
         let resultado1 = Math.round(flujo2*1500);
         let resultado2 = Math.round(flujo2*2000);
-        SC1.innerHTML = resultado1 + ' CC 1';
-        SC2.innerHTML = resultado2 + ' CC 2';
+        SC1.innerHTML = resultado1 + " CC";
+        SC2.innerHTML = resultado2+ " CC";
         PE.style.display = 'block';
         SC1.style.display = 'block';
         SC2.style.display = 'block';
+        ENUNCIADO3.style.display = 'block';
+        ENUNCIADO4.style.display = 'block';
+        TITULO2.style.display = 'block';
     }else{
         SC1.style.display = 'none';
         SC2.style.display = 'none';

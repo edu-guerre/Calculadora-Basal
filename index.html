@@ -11,17 +11,26 @@
 </head>
 
 <body>
-    <h1 id="titulo">Detalle de Producto</h1>
     <div id="contenedor">
         <div id="calculadora">
-            <button id="ayuda">?</button>
+            <button id="ayuda">Ayuda</button>
             <div class="pe" id="pe">
-                <div id="resulto">
-                    <p class="item resultado" id="flu">71cc/h</p>
-                    <p class="item resultado" id="man">m+m/2 : 105cc/h</p>
-                    <P class="item resultado" id="sc1">Resultado 1</P>
-                    <P class="item resultado" id="sc2">Resultado 2</P>
-                    <button id="volver1">Volver</button>
+                <div id="resulto" class="tabla">
+                    <div class="fila">
+                        <p class="titulo" id="titulo1">Holliday-Segar</p>
+                        <p class="titulo" id="titulo2">Superficie Corporal</p>
+                        <h1 class="titulo" id="enunciado1">CC/h</h1>
+                        <p class="item_resultado" id="flu">71cc/h</p>
+                        <h1 class="titulo" id="enunciado3">Multiplicado por 1500</h1>
+                        <P class="item_resultado" id="sc1">Resultado 1</P>
+                    </div>
+                    <div class="fila">
+                        <h1 class="titulo" id="enunciado2">m+m/2</h1>
+                        <p class="item_resultado" id="man">m+m/2 : 105cc/h</p>
+                        <h1 class="titulo" id="enunciado4">Multiplicado por 2000</h1>
+                        <P class="item_resultado" id="sc2">Resultado 2</P>
+                        <button id="volver1">Volver</button>
+                    </div>
                 </div>
             </div>
             <div class="contenido">
@@ -54,11 +63,14 @@
         <div class="contenido1" id="detalle">
             <div id="txtayuda">
                 <h1>¿Como se calcula?</h1>
+                <h1>Metodo Holliday-Segar</h1>
                 <ul>
                     <li>De 0kg a 10kg, se calcula 100cc por cada kilo.</li>
                     <li>Se suman 50cc por cada kilo de peso por arriba de 10kg, hasta 20kg.</li>
                     <li>De 20kg para arriba, se suman 20cc por cada kilo adicional</li>
                 </ul>
+                <h1>Metodo de Superficie Corporal</h1>
+                <p>Se realiza aplicando la siguiente formula "( (peso * 4) + 7) / (peso + 90)"</p>
                 <button id="volver2">Volver</button>
             </div>
         </div>

@@ -36,15 +36,15 @@ body{
 }
 #txtayuda{
     text-align: center;
-    margin-top: 225px;
+    margin-top: 125px;
 }
 #resulto{
     text-align: center;
-    margin-top: 240px;
+    margin-top: 115px;
 }
 .contenido{
      position: relative;
-     top: 50%;
+     top: 42%;
      transform: translateY(-60%);
      overflow: hidden;
      padding: 40px;
@@ -62,7 +62,7 @@ input{
     border: none;
     background-color: #eee;
 }
-button#calcular,#ayuda,#volver1,#volver2{
+button#calcular,#volver1,#volver2,#ayuda{
     font-size: 15px;
     font-weight: bold;
     padding: 12px 45px;
@@ -107,20 +107,21 @@ button:active{
     font-weight: bold;
     display: none;
 }
-.resultado{
+.item_resultado,.titulo{
     color: #0A81D1;
     font-weight: bold;
     font-size: 25px;
     margin-bottom: 5px;
     display: none;
 }
-#titulo{
+.titulo{
     text-align: center;
+    text-transform: uppercase;
 }
 .pe{
     width: 450px;
     height: 700px;
-    background-color: whitesmoke;
+    background-color: rgb(232, 232, 240);;
     text-align: center;
     /*Estas 3 lineas se encargan de centrar el div vertical y horizaontalmente*/
     position:absolute;
@@ -145,5 +146,26 @@ button{
     position: relative;
     right: -180px;
     padding: 12px 20px;
-    margin-top: 10px;
+    margin-top: 20px;
+}
+.tabla{
+    display: table;
+    width: 50%;
+    border-collapse: collapse;
+    position: absolute;
+    margin-left: 115px;  
+}
+
+.fila {
+    display: table-row;   
+}
+
+.item_resultado{
+    display: table-cell;
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+h1{
+    text-transform: uppercase;
 }
